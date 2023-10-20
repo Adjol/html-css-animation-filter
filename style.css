@@ -222,3 +222,46 @@
     width: 60px;
     height: 20px;
 }
+
+
+
+.ex-13-top-white {
+    animation: top-of-13 5s linear infinite;
+
+}
+
+@keyframes top-of-13 {
+
+    0% {left: -10%;
+        top: -10px;
+    }
+
+    25% {left: 90% ; top: -10px;}
+
+    50% { left: 90% ; top: calc(100% - 10px);}
+
+    75% { left: -10%;  top: calc(100% - 10px);}
+
+    100% { left: -10%;
+        top: -10px;}
+}
+
+.ex-13-bottom-white {
+    animation: bottom-of-13 5s linear infinite;
+}
+
+@keyframes bottom-of-13 {
+
+    0% {right: -10%;
+        bottom: -10px;
+    }
+
+    25% {right: 80% ; bottom: -10px;}
+
+    50% { right: 80% ; bottom: calc(100% - 10px);}
+
+    75% { right: -10%;  bottom: calc(100% - 10px);}
+
+    100% { right: -10%;
+        bottom: -10px;}
+}
